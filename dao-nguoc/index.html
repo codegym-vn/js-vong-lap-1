@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Đảo ngược</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <p id="result"></p>
+  <script>
+    let number = +prompt("Nhập 1 số nguyên dương: ");
+    let a = number;
+    let digit, result = 0
+
+    while(number) {
+      digit = number % 10;
+      result = (result * 10) + digit;
+      number = Math.floor(number / 10);
+    }
+  document.getElementById("result").innerHTML = a + "=>" + result;
+  </script>
+</body>
+
+</html>
